@@ -9,11 +9,11 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       {/* Navigation */}
-      <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 flex items-center justify-center">
         <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
           <div className="flex gap-6 md:gap-10">
             <Link href="/" className="flex items-center space-x-2">
-              <span className="inline-block font-bold">DevPortfolio</span>
+              <span className="inline-block font-bold">Fardan Rashidi</span>
             </Link>
           </div>
           <div className="flex flex-1 items-center justify-end space-x-4">
@@ -32,15 +32,15 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="flex-1">
+      <main className="flex-1 flex flex-col items-center justify-center">
         {/* Hero Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
+        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 flex items-center justify-center">
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                    Hi, I'm <span className="text-primary">John Doe</span>
+                    Hi, I'm <span className="text-primary">Fardan Rashidi</span>
                   </h1>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
                     A passionate software developer specializing in building exceptional digital experiences.
@@ -74,7 +74,7 @@ export default function Home() {
         </section>
 
         {/* About Section */}
-        <section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-muted/40">
+        <section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-muted/40 flex items-center justify-center">
           <div className="container px-4 md:px-6">
             <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
               <h2 className="text-3xl font-bold leading-[1.1] sm:text-3xl md:text-5xl">About Me</h2>
@@ -101,7 +101,7 @@ export default function Home() {
                     </svg>
                   </div>
                   <h3 className="text-xl font-bold">Frontend</h3>
-                  <p className="text-sm text-muted-foreground text-center">React, Next.js, TypeScript, Tailwind CSS</p>
+                  <p className="text-sm text-muted-foreground text-center">React, Next.js, TypeScript, Tailwind CSS, Bootstrap</p>
                 </div>
                 <div className="flex flex-col items-center gap-2">
                   <div className="rounded-full bg-primary/10 p-4">
@@ -127,7 +127,7 @@ export default function Home() {
                     </svg>
                   </div>
                   <h3 className="text-xl font-bold">Backend</h3>
-                  <p className="text-sm text-muted-foreground text-center">Node.js, Express, MongoDB, PostgreSQL</p>
+                  <p className="text-sm text-muted-foreground text-center">Node.js, Django, Laravel, MongoDB, PostgreSQL</p>
                 </div>
                 <div className="flex flex-col items-center gap-2">
                   <div className="rounded-full bg-primary/10 p-4">
@@ -155,7 +155,7 @@ export default function Home() {
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="w-full py-12 md:py-24 lg:py-32">
+        <section id="projects" className="w-full py-12 md:py-24 lg:py-32 flex items-center justify-center">
           <div className="container px-4 md:px-6">
             <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
               <h2 className="text-3xl font-bold leading-[1.1] sm:text-3xl md:text-5xl">Projects</h2>
@@ -168,7 +168,7 @@ export default function Home() {
               <Card className="flex flex-col overflow-hidden transition-all hover:shadow-lg">
                 <div className="aspect-video overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/file.svg?height=400&width=600"
                     alt="Project 1"
                     width={600}
                     height={400}
@@ -176,7 +176,7 @@ export default function Home() {
                   />
                 </div>
                 <CardHeader>
-                  <CardTitle>E-Commerce Platform</CardTitle>
+                  <CardTitle></CardTitle>
                   <CardDescription>A full-stack e-commerce solution with payment integration</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -195,166 +195,12 @@ export default function Home() {
                 </CardFooter>
               </Card>
 
-              {/* Project 2 */}
-              <Card className="flex flex-col overflow-hidden transition-all hover:shadow-lg">
-                <div className="aspect-video overflow-hidden">
-                  <Image
-                    src="/placeholder.svg?height=400&width=600"
-                    alt="Project 2"
-                    width={600}
-                    height={400}
-                    className="object-cover transition-all hover:scale-105"
-                  />
-                </div>
-                <CardHeader>
-                  <CardTitle>Task Management App</CardTitle>
-                  <CardDescription>A collaborative task management application</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Developed with React, Redux, and Firebase. Features include real-time updates, team collaboration,
-                    and task prioritization.
-                  </p>
-                </CardContent>
-                <CardFooter className="mt-auto">
-                  <Link href="https://project2.example.com" target="_blank" rel="noopener noreferrer">
-                    <Button>
-                      View Project
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </Link>
-                </CardFooter>
-              </Card>
-
-              {/* Project 3 */}
-              <Card className="flex flex-col overflow-hidden transition-all hover:shadow-lg">
-                <div className="aspect-video overflow-hidden">
-                  <Image
-                    src="/placeholder.svg?height=400&width=600"
-                    alt="Project 3"
-                    width={600}
-                    height={400}
-                    className="object-cover transition-all hover:scale-105"
-                  />
-                </div>
-                <CardHeader>
-                  <CardTitle>AI Content Generator</CardTitle>
-                  <CardDescription>An AI-powered content creation tool</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Created with Node.js, Express, and OpenAI API. Generates high-quality content based on user prompts
-                    and preferences.
-                  </p>
-                </CardContent>
-                <CardFooter className="mt-auto">
-                  <Link href="https://project3.example.com" target="_blank" rel="noopener noreferrer">
-                    <Button>
-                      View Project
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </Link>
-                </CardFooter>
-              </Card>
-
-              {/* Project 4 */}
-              <Card className="flex flex-col overflow-hidden transition-all hover:shadow-lg">
-                <div className="aspect-video overflow-hidden">
-                  <Image
-                    src="/placeholder.svg?height=400&width=600"
-                    alt="Project 4"
-                    width={600}
-                    height={400}
-                    className="object-cover transition-all hover:scale-105"
-                  />
-                </div>
-                <CardHeader>
-                  <CardTitle>Fitness Tracker</CardTitle>
-                  <CardDescription>A mobile-first fitness tracking application</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Built with React Native and Firebase. Tracks workouts, nutrition, and progress with interactive
-                    charts and personalized recommendations.
-                  </p>
-                </CardContent>
-                <CardFooter className="mt-auto">
-                  <Link href="https://project4.example.com" target="_blank" rel="noopener noreferrer">
-                    <Button>
-                      View Project
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </Link>
-                </CardFooter>
-              </Card>
-
-              {/* Project 5 */}
-              <Card className="flex flex-col overflow-hidden transition-all hover:shadow-lg">
-                <div className="aspect-video overflow-hidden">
-                  <Image
-                    src="/placeholder.svg?height=400&width=600"
-                    alt="Project 5"
-                    width={600}
-                    height={400}
-                    className="object-cover transition-all hover:scale-105"
-                  />
-                </div>
-                <CardHeader>
-                  <CardTitle>Real Estate Platform</CardTitle>
-                  <CardDescription>A comprehensive real estate listing and management system</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Developed with Next.js, MongoDB, and Google Maps API. Features include property listings, virtual
-                    tours, and agent dashboards.
-                  </p>
-                </CardContent>
-                <CardFooter className="mt-auto">
-                  <Link href="https://project5.example.com" target="_blank" rel="noopener noreferrer">
-                    <Button>
-                      View Project
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </Link>
-                </CardFooter>
-              </Card>
-
-              {/* Project 6 */}
-              <Card className="flex flex-col overflow-hidden transition-all hover:shadow-lg">
-                <div className="aspect-video overflow-hidden">
-                  <Image
-                    src="/placeholder.svg?height=400&width=600"
-                    alt="Project 6"
-                    width={600}
-                    height={400}
-                    className="object-cover transition-all hover:scale-105"
-                  />
-                </div>
-                <CardHeader>
-                  <CardTitle>Weather Dashboard</CardTitle>
-                  <CardDescription>A beautiful and informative weather application</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Created with React, TypeScript, and OpenWeather API. Provides detailed weather forecasts, alerts,
-                    and historical data visualization.
-                  </p>
-                </CardContent>
-                <CardFooter className="mt-auto">
-                  <Link href="https://project6.example.com" target="_blank" rel="noopener noreferrer">
-                    <Button>
-                      View Project
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </Link>
-                </CardFooter>
-              </Card>
             </div>
           </div>
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="w-full py-12 md:py-24 lg:py-32 bg-muted/40">
+        <section id="contact" className="w-full py-12 md:py-24 lg:py-32 bg-muted/40 flex items-center justify-center">
           <div className="container px-4 md:px-6">
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2">
               <div className="flex flex-col justify-center space-y-4">
@@ -365,10 +211,10 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <a href="mailto:contact@example.com">
+                  <a href="mailto:fardan.work24@gmail.com">
                     <Button variant="outline" className="w-full gap-1">
                       <Mail className="h-4 w-4" />
-                      contact@example.com
+                      fardan.work24@gmail.com
                     </Button>
                   </a>
                 </div>
@@ -449,10 +295,10 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="w-full border-t py-6 md:py-0">
+      <footer className="w-full py-6 bg-gray-100 flex items-center justify-center text-center">
         <div className="container flex flex-col items-center justify-between gap-4 md:h-16 md:flex-row">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-            © {new Date().getFullYear()} John Doe. All rights reserved.
+            © {new Date().getFullYear()} Fardan Rashidi. All rights reserved.
           </p>
           <div className="flex gap-4">
             <a href="#" className="text-sm font-medium underline underline-offset-4">
