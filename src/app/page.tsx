@@ -40,7 +40,7 @@ export default function Home() {
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                    Hi, I'm <span className="text-primary">Fardan Rashidi</span>
+                    Hi, I&apos;m <span className="text-primary">Fardan Rashidi</span>
                   </h1>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
                     A passionate software developer specializing in building exceptional digital experiences.
@@ -79,7 +79,7 @@ export default function Home() {
             <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
               <h2 className="text-3xl font-bold leading-[1.1] sm:text-3xl md:text-5xl">About Me</h2>
               <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-                I'm a software developer with a passion for creating elegant, efficient, and user-friendly applications.
+                I&apos;m a software developer with a passion for creating elegant, efficient, and user-friendly applications.
                 With expertise in modern web technologies, I build solutions that solve real-world problems.
               </p>
               <div className="grid grid-cols-1 gap-8 md:grid-cols-3 mt-8">
@@ -207,7 +207,7 @@ export default function Home() {
                 <div className="space-y-2">
                   <h2 className="text-3xl font-bold tracking-tighter md:text-5xl">Get in Touch</h2>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                    I'm always open to new opportunities and collaborations. Feel free to reach out!
+                    I&apos;m always open to new opportunities and collaborations. Feel free to reach out!
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -237,7 +237,7 @@ export default function Home() {
                 <div className="grid gap-2">
                   <h3 className="text-xl font-bold">Send a Message</h3>
                   <p className="text-sm text-muted-foreground">
-                    Fill out the form below and I'll get back to you as soon as possible.
+                    Fill out the form below and I&apos;ll get back to you as soon as possible.
                   </p>
                 </div>
                 <form className="grid gap-4">
