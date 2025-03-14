@@ -373,13 +373,13 @@ export default function Home() {
                   </a>
                 </div>
                 <div className="flex gap-4">
-                  <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/fardanrashidi" target="_blank" rel="noopener noreferrer">
                     <Button size="icon" variant="ghost">
                       <Github className="h-5 w-5" />
                       <span className="sr-only">GitHub</span>
                     </Button>
                   </a>
-                  <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+                  <a href="https://linkedin.com/in/fardanrashidi" target="_blank" rel="noopener noreferrer">
                     <Button size="icon" variant="ghost">
                       <Linkedin className="h-5 w-5" />
                       <span className="sr-only">LinkedIn</span>
