@@ -245,8 +245,9 @@ export default function Home() {
                   className="grid gap-4"
                   onSubmit={(e) => {
                   e.preventDefault();
-                  const name = (e.target as any).name.value;
-                  const message = (e.target as any).message.value;
+                    const form = e.target as HTMLFormElement;
+                    const name = (form.elements.namedItem("name") as HTMLInputElement)?.value;
+                    const message = (form.elements.namedItem("message") as HTMLTextAreaElement)?.value;
                   const whatsappMessage = name
                     ? `Hello, my name is ${name}. ${message}`
                     : message;
