@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link"
 import Image from "next/image"
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react"
@@ -62,7 +64,7 @@ export default function Home() {
               </div>
               <div className="flex items-center justify-center">
                 <Image
-                  src="/placeholder.svg?height=600&width=600"
+                  src="/images/profile.jpeg"
                   alt="Developer Portrait"
                   width={600}
                   height={600}
@@ -168,7 +170,7 @@ export default function Home() {
               <Card className="flex flex-col overflow-hidden transition-all hover:shadow-lg">
                 <div className="aspect-video overflow-hidden">
                   <Image
-                    src="/file.svg?height=400&width=600"
+                    src="/mobile-app.svg"
                     alt="Project 1"
                     width={600}
                     height={400}
@@ -177,16 +179,15 @@ export default function Home() {
                 </div>
                 <CardHeader>
                   <CardTitle></CardTitle>
-                  <CardDescription>A full-stack e-commerce solution with payment integration</CardDescription>
+                  <CardDescription>Real-Time Glucose Monitoring App</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Built with Next.js, TypeScript, Tailwind CSS, and Stripe for payments. Features include user
-                    authentication, product management, and order processing.
-                  </p>
+                    <p className="text-sm text-muted-foreground text-justify">
+                    A React Native mobile app integrated with Supabase for real-time data syncing from an ESP-based non-invasive glucose monitoring device. The app supports two user roles—patients and doctors. Patients can view their personal glucose trends, while doctors can monitor multiple patients data remotely. Built with a focus on real-time updates, secure authentication, and role-based access.
+                    </p>
                 </CardContent>
                 <CardFooter className="mt-auto">
-                  <Link href="https://project1.example.com" target="_blank" rel="noopener noreferrer">
+                  <Link href="/mobile">
                     <Button>
                       View Project
                       <ArrowRight className="ml-2 h-4 w-4" />
@@ -235,57 +236,55 @@ export default function Home() {
               </div>
               <div className="flex flex-col space-y-4 rounded-xl border bg-background p-6">
                 <div className="grid gap-2">
-                  <h3 className="text-xl font-bold">Send a Message</h3>
+                  <h3 className="text-xl font-bold">Send a Message on WhatsApp</h3>
                   <p className="text-sm text-muted-foreground">
                     Fill out the form below and I&apos;ll get back to you as soon as possible.
                   </p>
                 </div>
-                <form className="grid gap-4">
+                <form
+                  className="grid gap-4"
+                  onSubmit={(e) => {
+                  e.preventDefault();
+                  const name = (e.target as any).name.value;
+                  const message = (e.target as any).message.value;
+                  const whatsappMessage = name
+                    ? `Hello, my name is ${name}. ${message}`
+                    : message;
+                  const whatsappUrl = `https://wa.me/60126367851?text=${encodeURIComponent(whatsappMessage)}`;
+                  window.open(whatsappUrl, "_blank");
+                  }}
+                >
                   <div className="grid gap-2">
-                    <label
-                      htmlFor="name"
-                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                    >
-                      Name
-                    </label>
-                    <input
-                      id="name"
-                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                      placeholder="Enter your name"
-                      required
-                    />
+                  <label
+                    htmlFor="name"
+                    className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                  >
+                    Name
+                  </label>
+                  <input
+                    id="name"
+                    name="name"
+                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                    placeholder="Enter your name (optional)"
+                  />
                   </div>
                   <div className="grid gap-2">
-                    <label
-                      htmlFor="email"
-                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                    >
-                      Email
-                    </label>
-                    <input
-                      id="email"
-                      type="email"
-                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                      placeholder="Enter your email"
-                      required
-                    />
-                  </div>
-                  <div className="grid gap-2">
-                    <label
-                      htmlFor="message"
-                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                    >
-                      Message
-                    </label>
-                    <textarea
-                      id="message"
-                      className="flex min-h-[120px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                      placeholder="Enter your message"
-                      required
-                    />
+                  <label
+                    htmlFor="message"
+                    className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                  >
+                    Message
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    className="flex min-h-[120px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                    placeholder="Enter your message"
+                    required
+                  />
                   </div>
                   <Button type="submit" className="w-full">
-                    Send Message
+                  Send Message
                   </Button>
                 </form>
               </div>
@@ -305,7 +304,7 @@ export default function Home() {
               Privacy Policy
             </a>
             <a href="#" className="text-sm font-medium underline underline-offset-4">
-              Terms of Service
+              Terms of Service 
             </a>
           </div>
         </div>
