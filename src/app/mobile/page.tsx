@@ -20,7 +20,7 @@ export default function MobileApp() {
       </section>
 
       {/* Main Content */}
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gridTemplateRows: 'auto auto', gap: '10px', padding: '20px' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gridTemplateRows: 'auto auto', gap: '10px', padding: '20px', marginBottom: '40px' }}>
         {/* Overview spanning row 1 and row 2, column 1 */}
         <div style={{ gridColumn: '1', gridRow: '1 / span 2' }}>
           <p style={{ fontSize: '24px', fontWeight: 'bold' }}>Overview</p>
@@ -28,13 +28,13 @@ export default function MobileApp() {
         </div>
 
         {/* My role */}
-        <div style={{ gridColumn: '2', gridRow: '1' }}>
-          <p><strong>My role:</strong> UI Design, Lead Developer</p>
+        <div style={{ gridColumn: '2', gridRow: '1' , paddingTop: '10px' }}>
+          <p><strong>My role:</strong> UI Designer, Lead Developer</p>
         </div>
 
         {/* Timeline */}
-        <div style={{ gridColumn: '3', gridRow: '1' }}>
-          <p><strong>Timeline:</strong> 3 weeks</p>
+        <div style={{ gridColumn: '3', gridRow: '1', paddingTop: '10px' }}>
+          <p><strong>Timeline:</strong> </p>
         </div>
 
         {/* Tools used */}
@@ -49,23 +49,23 @@ export default function MobileApp() {
       </div>
 
       {/* The Process */}
-      <div style={{ padding: '20px' }}>
-        <p style={{ fontSize: '24px', fontWeight: 'bold' }}>The Process</p>
+      <div style={{ padding: '20px', marginBottom: '40px' }}>
+        <p style={{ fontSize: '24px', fontWeight: 'bold' , marginBottom: '20px'}}>The Process</p>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: '10px' }}>
           <div>
-            <p><strong>Step 1:</strong> Research and Planning</p>
+            <p style={{marginBottom: '20px'}}><strong>Step 1:</strong> Research and Planning</p>
             <p>Understanding the requirements and planning the architecture.</p>
               </div>
               <div>
-            <p><strong>Step 2:</strong> Design</p>
+            <p style={{marginBottom: '20px'}}><strong>Step 2:</strong> Design</p>
             <p>Discussing UI designs for the application.</p>
               </div>
               <div>
-            <p><strong>Step 3:</strong> Development</p>
+            <p style={{marginBottom: '20px'}}><strong>Step 3:</strong> Development</p>
             <p>Building the application using React Native and Supabase.</p>
               </div>
               <div>
-            <p><strong>Step 4:</strong> Testing and Deployment</p>
+            <p style={{marginBottom: '20px'}}><strong>Step 4:</strong> Testing and Deployment</p>
             <p>Ensuring functionality and deploying the app.</p>
           </div>
         </div>
