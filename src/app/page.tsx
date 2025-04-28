@@ -196,6 +196,36 @@ export default function Home() {
                 </CardFooter>
               </Card>
 
+              {/* Project 2 */}
+              <Card className="flex flex-col overflow-hidden transition-all hover:shadow-lg">
+                <div className="aspect-video overflow-hidden">
+                  <Image
+                    src="/home-server.svg"
+                    alt="Project 2"
+                    width={600}
+                    height={400}
+                    className="object-cover transition-all hover:scale-105"
+                  />
+                </div>
+                <CardHeader>
+                  <CardTitle></CardTitle>
+                  <CardDescription>Home Server</CardDescription>
+                </CardHeader>
+                <CardContent>
+                    <p className="text-sm text-muted-foreground text-justify">
+                      A personal home server setup using Proxmox, Truenas, and Arch. Hosting a variety of services including Nextcloud, Jellyfin, Home Assistant and any project to access via the same network. This setup allows for seamless file sharing, media streaming, and home automation. 
+                    </p>
+                </CardContent>
+                <CardFooter className="mt-auto">
+                  <Link href="/home-server">
+                    <Button>
+                      View Project
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </Link>
+                </CardFooter>
+              </Card>
+
             </div>
           </div>
         </section>
