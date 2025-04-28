@@ -103,7 +103,7 @@ export default function HomeServer() {
               Why Arch?
             </h3>
             <p>
-              I have gone through multiple operating systems (Ubuntu, Debian, Fedora, etc.) and I have always found that I enjoy using Arch mainly for its customizability and being able to do whatever I want, including breaking it on my own. That said, why Arch as my main server? Tbh I don't have any reason other than I have been using it for a while and I know how to use it. (debian would prolly be a better choice but I don't like it as much)
+              I have gone through multiple operating systems (Ubuntu, Debian, Fedora, etc.) and I have always found that I enjoy using Arch mainly for its customizability and being able to do whatever I want, including breaking it on my own. That said, why Arch as my main server? Tbh I don&apos;t have any reason other than I have been using it for a while and I know how to use it. (debian would prolly be a better choice but I don&apos;t like it as much)
             </p>
           </div>
         </details>

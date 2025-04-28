@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export default function MobileApp() {
   return (
@@ -79,16 +80,16 @@ export default function MobileApp() {
           <div>
             <p>The design basically is separated into 2 parts: Patients and Doctors. This design ensures the app interaction is easy to use and yet informative. Here are the pages with some context on how it works.</p>
           </div>
-          <div>
-            <img
-              src="/images/startup.png"
-              alt="Startup Overview"
-              style={{ width: '100%', borderRadius: '8px', marginBottom: '20px', marginTop: '40px' }}
-            />
-          </div>
+          <Image
+            src="/images/startup.png"
+            alt="Startup Overview"
+            width={800}
+            height={600}
+            style={{ width: '100%', borderRadius: '8px', marginBottom: '20px', marginTop: '40px' }}
+          />
           <div>
             <p>
-              First and foremost, the login page. This is where the user will enter their credentials to access the app. The design is simple and straightforward, ensuring that users can easily log in without any confusion. Next to it is none other than the sign up page, where users will be able to create their account as a Patient or Doctor (It's not recommend for anyone to just create a doctor but for this context lets just say they can. Ideally it would either be from the company or the hospitals authority).
+              First and foremost, the login page. This is where the user will enter their credentials to access the app. The design is simple and straightforward, ensuring that users can easily log in without any confusion. Next to it is none other than the sign up page, where users will be able to create their account as a Patient or Doctor (It&apos;s not recommend for anyone to just create a doctor but for this context lets just say they can. Ideally it would either be from the company or the hospitals authority).
             </p>
           </div>
           {/* Patients side */}
@@ -101,14 +102,14 @@ export default function MobileApp() {
               </p>
             </div>
             <div>
-              <img
+              <Image
                 src="/images/dashboard.png"
                 alt="Dashboard"
                 style={{ width: '100%', borderRadius: '8px', marginBottom: '20px' }}
               />
             </div>
             <div>
-              <img
+              <Image
                 src="/images/history.png"
                 alt="History"
                 style={{ width: '100%', borderRadius: '8px', marginBottom: '20px' }}
@@ -125,7 +126,7 @@ export default function MobileApp() {
               </p>
             </div>
             <div>
-              <img
+              <Image
                 src="/images/profile.png"
                 alt="Profile"
                 style={{ width: '100%', borderRadius: '8px', marginBottom: '20px' }}
@@ -141,14 +142,14 @@ export default function MobileApp() {
               </p>
             </div>
             <div>
-              <img
+              <Image
                 src="/images/dashboard.png"
                 alt="Dashboard"
                 style={{ width: '100%', borderRadius: '8px', marginBottom: '20px' }}
               />
             </div>
             <div>
-              <img
+              <Image
                 src="/images/history.png"
                 alt="History"
                 style={{ width: '100%', borderRadius: '8px', marginBottom: '20px' }}
@@ -165,7 +166,7 @@ export default function MobileApp() {
               </p>
             </div>
             <div>
-              <img
+              <Image
                 src="/images/profile.png"
                 alt="Profile"
                 style={{ width: '100%', borderRadius: '8px', marginBottom: '20px' }}
@@ -176,13 +177,13 @@ export default function MobileApp() {
 
         {/* What I've Learned */}
         <div style={{ padding: '20px', marginBottom: '40px' }}>
-          <p style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '20px' }}>What I've Learned</p>
+          <p style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '20px' }}>What I&apos;ve Learned</p>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
             <div>
-              <p>This was a collab project with a Master's Degree Student that created the Non-Invasive Glucose Monitoring System. Working with this app was really exciting since I learned a lot on diabetes and ways to monitor it. I had worked with Supabase during my university days, so returning to it felt refreshing. React Native was new to me, but I had prior experience in mobile development. <br /> <br /> If there was more time and resources, I would love to make this project into an actual product for the general public to use.</p>
+              <p>This was a collab project with a Master&apos;s Degree Student that created the Non-Invasive Glucose Monitoring System. Working with this app was really exciting since I learned a lot on diabetes and ways to monitor it. I had worked with Supabase during my university days, so returning to it felt refreshing. React Native was new to me, but I had prior experience in mobile development. <br /> <br /> If there was more time and resources, I would love to make this project into an actual product for the general public to use.</p>
             </div>
             <div>
-              <p>Next Steps: <br /> I think there are more things I could add on to it, stuff like API integrations, syncing with Apple Health or Googles thing, or even the whole doctors process could've been more detailed and refined. Heck maybe modern smart watches could measure blood glucose and everything can be handled there.</p>
+              <p>Next Steps: <br /> I think there are more things I could add on to it, stuff like API integrations, syncing with Apple Health or Googles thing, or even the whole doctors process could&apos;ve been more detailed and refined. Heck maybe modern smart watches could measure blood glucose and everything can be handled there.</p>
             </div>
           </div>
         </div>
