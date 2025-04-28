@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function MobileApp() {
   return (
-    <div style={{ backgroundColor: '#FFFFFF', minHeight: '100vh' }}>
+    <div style={{ minHeight: '100vh' }}>
       {/* Top Bar */}
       <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 flex items-center justify-center">
         <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
@@ -199,7 +199,7 @@ export default function MobileApp() {
 
       {/* Footer */}
       <hr style={{ margin: '20px 0', border: 'none', borderTop: '1px solid #ccc' }} />
-      <footer style={{ padding: '10px', backgroundColor: '#E8E9EB', textAlign: 'center', paddingBottom: '20px' }}>
+      <footer style={{ padding: '10px', textAlign: 'center', paddingBottom: '20px' }}>
         <a href="https://github.com/FardanRashidi/resume" target="_blank" rel="noopenner noreferrer" style={{ margin: '0 10px' }}>Resume</a>
         <a href="https://github.com/FardanRashidi" target="_blank" rel="noopener noreferrer" style={{ margin: '0 10px' }}>GitHub</a>
         <a href="https://linkedin.com/in/fardanrashidi" target="_blank" rel="noopener noreferrer" style={{ margin: '0 10px' }}>LinkedIn</a>
