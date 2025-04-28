@@ -105,6 +105,8 @@ export default function MobileApp() {
               <Image
                 src="/images/dashboard.png"
                 alt="Dashboard"
+                width={800}
+                height={600}
                 style={{ width: '100%', borderRadius: '8px', marginBottom: '20px' }}
               />
             </div>
@@ -112,6 +114,8 @@ export default function MobileApp() {
               <Image
                 src="/images/history.png"
                 alt="History"
+                width={800}
+                height={600}
                 style={{ width: '100%', borderRadius: '8px', marginBottom: '20px' }}
               />
             </div>
@@ -129,6 +133,8 @@ export default function MobileApp() {
               <Image
                 src="/images/profile.png"
                 alt="Profile"
+                width={800}
+                height={600}
                 style={{ width: '100%', borderRadius: '8px', marginBottom: '20px' }}
               />
             </div>
@@ -145,30 +151,8 @@ export default function MobileApp() {
               <Image
                 src="/images/dashboard.png"
                 alt="Dashboard"
-                style={{ width: '100%', borderRadius: '8px', marginBottom: '20px' }}
-              />
-            </div>
-            <div>
-              <Image
-                src="/images/history.png"
-                alt="History"
-                style={{ width: '100%', borderRadius: '8px', marginBottom: '20px' }}
-              />
-            </div>
-            <div>
-              <p>
-                The history page is where the user will be able to see their glucose levels over time. This is where the user will be able to see their progress and how they are doing.
-              </p>
-            </div>
-            <div>
-              <p>
-                As most apps will have, the profile page is where the user will be able to see their profile and edit their information.
-              </p>
-            </div>
-            <div>
-              <Image
-                src="/images/profile.png"
-                alt="Profile"
+                width={800}
+                height={600}
                 style={{ width: '100%', borderRadius: '8px', marginBottom: '20px' }}
               />
             </div>
