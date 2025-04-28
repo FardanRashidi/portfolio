@@ -25,7 +25,7 @@ export default function MobileApp() {
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gridTemplateRows: 'auto auto', gap: '10px', padding: '20px', marginBottom: '40px' }}>
           {/* Overview spanning row 1 and row 2, column 1 */}
           <div style={{ gridColumn: '1', gridRow: '1 / span 2', paddingRight: 50 }}>
-            <p style={{ fontSize: '24px', fontWeight: 'bold', color: '#A8D1D1' }}>Overview</p>
+            <p style={{ fontSize: '24px', fontWeight: 'bold', color: '#86a7a7' }}>Overview</p>
             <p>This documentation outlines the development process of my application, built using React Native and Supabase. The project focuses on creating a seamless interface for interacting with a glucose monitoring system, enabling real-time data handling and user engagement through a mobile application.</p>
           </div>
 
@@ -52,7 +52,7 @@ export default function MobileApp() {
 
         {/* The Process */}
         <div style={{ padding: '20px', marginBottom: '40px' }}>
-          <p style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '20px', color: '#A8D1D1' }}>The Process</p>
+          <p style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '20px', color: '#86a7a7' }}>The Process</p>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: '10px' }}>
             <div>
               <p style={{ marginBottom: '20px' }}><strong>Step 1:</strong> Research and Planning</p>
@@ -76,7 +76,7 @@ export default function MobileApp() {
 
         {/* The Design */}
         <div style={{ padding: '20px', marginBottom: '40px' }}>
-          <p style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '20px', color: '#A8D1D1' }}>The Design</p>
+          <p style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '20px', color: '#86a7a7' }}>The Design</p>
           <div style={{ width: '60%' }}>
             <p>The design basically is separated into 2 parts: Patients and Doctors. This design ensures the app interaction is easy to use and yet informative. Here are the pages with some context on how it works.</p>
           </div>
@@ -102,75 +102,89 @@ export default function MobileApp() {
             </p>
           </div>
           {/* Patients side */}
-          <p style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '20px', marginTop: '40px', color: '#A8D1D1' }}>Patients Side</p>
+          <p style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '20px', marginTop: '40px', color: '#86a7a7' }}>Patients Side</p>
 
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '40px', marginTop: '40px' }}>
-            <div>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <p>
                 After logging in, the user will be directed to the dashboard. This is where the user will be able to see their latest glucose levels from the glucose monitoring system and input whether they are fasting, just before eating, or after eating. In the context of this project, the user will be able to compare the glucose monitoring system with their own finger pricking test results.
               </p>
             </div>
             <div>
               <Image
-                src="/images/dashboard.png"
+                src="/images/dashboard.jpg"
                 alt="Dashboard"
-                width={800}
-                height={600}
-                style={{ width: '100%', borderRadius: '8px', marginBottom: '20px' }}
+                width={200}
+                height={100}
+                style={{ borderRadius: '25px', marginBottom: '20px' }}
               />
             </div>
             <div>
               <Image
-                src="/images/history.png"
+                src="/images/history.jpg"
                 alt="History"
-                width={800}
-                height={600}
-                style={{ width: '100%', borderRadius: '8px', marginBottom: '20px' }}
+                width={200}
+                height={100}
+                style={{ borderRadius: '25px', marginBottom: '20px' }}
               />
             </div>
-            <div>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <p>
                 The history page is where the user will be able to see their glucose levels over time. This is where the user will be able to see their progress and how they are doing.
               </p>
             </div>
-            <div>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <p>
                 As most apps will have, the profile page is where the user will be able to see their profile and edit their information.
               </p>
             </div>
             <div>
               <Image
-                src="/images/profile.png"
+                src="/images/profile.jpg"
                 alt="Profile"
-                width={800}
-                height={600}
-                style={{ width: '100%', borderRadius: '8px', marginBottom: '20px' }}
+                width={200}
+                height={100}
+                style={{ borderRadius: '25px', marginBottom: '20px' }}
               />
             </div>
           </div>
           {/* Doctors side */}
-          <p style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '20px', marginTop: '40px', color: '#A8D1D1' }}>Doctors Side</p>
+          <p style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '20px', marginTop: '40px', color: '#86a7a7' }}>Doctors Side</p>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '40px', marginTop: '40px' }}>
             <div>
-              <p>
-                After logging in, the user will be directed to the dashboard. This is where the user will be able to see their latest glucose levels from the glucose monitoring system and input whether they are fasting, just before eating, or after eating. In the context of this project, the user will be able to compare the glucose monitoring system with their own finger pricking test results.
+              <p style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                After logging in, the doctor will be able to see the patients that are under their care. This is where the doctor will be able to see the patients glucose levels and filter based on diabetes type.
               </p>
             </div>
             <div>
               <Image
-                src="/images/dashboard.png"
-                alt="Dashboard"
-                width={800}
-                height={600}
-                style={{ width: '100%', borderRadius: '8px', marginBottom: '20px' }}
+                src="/images/doctor_dashboard.png"
+                alt="*WIP will add later"
+                width={200}
+                height={100}
+                style={{ borderRadius: '25px', marginBottom: '20px' }}
               />
+            </div>
+            <div>
+              <Image
+                src="/images/patient_data.png"
+                alt="*WIP will add later"
+                width={200}
+                height={100}
+                style={{ borderRadius: '25px', marginBottom: '20px' }}
+              />
+            </div>
+            <div>
+              <p style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                The Patient Data page allows the doctor to see the patients that took their glucose levels on that current day. This is where the doctor can monitor and send some remarks to the patients.
+              </p>
             </div>
           </div>
         </div>
 
         {/* What I've Learned */}
         <div style={{ padding: '20px', marginBottom: '40px' }}>
-          <p style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '20px', color: '#A8D1D1' }}>What I&apos;ve Learned</p>
+          <p style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '20px', color: '#86a7a7' }}>What I&apos;ve Learned</p>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
             <div>
               <p>This was a collab project with a Master&apos;s Degree Student that created the Non-Invasive Glucose Monitoring System. Working with this app was really exciting since I learned a lot on diabetes and ways to monitor it. I had worked with Supabase during my university days, so returning to it felt refreshing. React Native was new to me, but I had prior experience in mobile development. <br /> <br /> If there was more time and resources, I would love to make this project into an actual product for the general public to use.</p>

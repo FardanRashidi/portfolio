@@ -179,12 +179,12 @@ export default function Home() {
                 </div>
                 <CardHeader>
                   <CardTitle></CardTitle>
-                  <CardDescription>Real-Time Glucose Monitoring App</CardDescription>
+                  <CardDescription className="text-lg font-bold">Real-Time Glucose Monitoring App</CardDescription>
                 </CardHeader>
                 <CardContent>
-                    <p className="text-sm text-muted-foreground text-justify">
+                  <p className="text-sm text-muted-foreground text-justify">
                     A React Native mobile app integrated with Supabase for real-time data syncing from an ESP-based non-invasive glucose monitoring device. The app supports two user roles—patients and doctors. Patients can view their personal glucose trends, while doctors can monitor multiple patients data remotely. Built with a focus on real-time updates, secure authentication, and role-based access.
-                    </p>
+                  </p>
                 </CardContent>
                 <CardFooter className="mt-auto">
                   <Link href="/mobile">
@@ -209,12 +209,12 @@ export default function Home() {
                 </div>
                 <CardHeader>
                   <CardTitle></CardTitle>
-                  <CardDescription>Home Server</CardDescription>
+                  <CardDescription className="text-lg font-bold">Home Server</CardDescription>
                 </CardHeader>
                 <CardContent>
-                    <p className="text-sm text-muted-foreground text-justify">
-                      A personal home server setup using Proxmox, Truenas, and Arch. Hosting a variety of services including Nextcloud, Jellyfin, Home Assistant and any project to access via the same network. This setup allows for seamless file sharing, media streaming, and home automation. 
-                    </p>
+                  <p className="text-sm text-muted-foreground text-justify">
+                    A personal home server setup using Proxmox, Truenas, and Arch. Hosting a variety of services including Nextcloud, Jellyfin, Home Assistant and any project to access via the same network. This setup allows for seamless file sharing, media streaming, and home automation.
+                  </p>
                 </CardContent>
                 <CardFooter className="mt-auto">
                   <Link href="/home-server">
@@ -274,48 +274,48 @@ export default function Home() {
                 <form
                   className="grid gap-4"
                   onSubmit={(e) => {
-                  e.preventDefault();
+                    e.preventDefault();
                     const form = e.target as HTMLFormElement;
                     const name = (form.elements.namedItem("name") as HTMLInputElement)?.value;
                     const message = (form.elements.namedItem("message") as HTMLTextAreaElement)?.value;
-                  const whatsappMessage = name
-                    ? `Hello, my name is ${name}. ${message}`
-                    : message;
-                  const whatsappUrl = `https://wa.me/60126367851?text=${encodeURIComponent(whatsappMessage)}`;
-                  window.open(whatsappUrl, "_blank");
+                    const whatsappMessage = name
+                      ? `Hello, my name is ${name}. ${message}`
+                      : message;
+                    const whatsappUrl = `https://wa.me/60126367851?text=${encodeURIComponent(whatsappMessage)}`;
+                    window.open(whatsappUrl, "_blank");
                   }}
                 >
                   <div className="grid gap-2">
-                  <label
-                    htmlFor="name"
-                    className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                  >
-                    Name
-                  </label>
-                  <input
-                    id="name"
-                    name="name"
-                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                    placeholder="Enter your name (optional)"
-                  />
+                    <label
+                      htmlFor="name"
+                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                    >
+                      Name
+                    </label>
+                    <input
+                      id="name"
+                      name="name"
+                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                      placeholder="Enter your name (optional)"
+                    />
                   </div>
                   <div className="grid gap-2">
-                  <label
-                    htmlFor="message"
-                    className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                  >
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    className="flex min-h-[120px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                    placeholder="Enter your message"
-                    required
-                  />
+                    <label
+                      htmlFor="message"
+                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                    >
+                      Message
+                    </label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      className="flex min-h-[120px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                      placeholder="Enter your message"
+                      required
+                    />
                   </div>
                   <Button type="submit" className="w-full">
-                  Send Message
+                    Send Message
                   </Button>
                 </form>
               </div>
@@ -330,14 +330,6 @@ export default function Home() {
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
             © {new Date().getFullYear()} Fardan Rashidi. All rights reserved.
           </p>
-          <div className="flex gap-4">
-            <a href="#" className="text-sm font-medium underline underline-offset-4">
-              Privacy Policy
-            </a>
-            <a href="#" className="text-sm font-medium underline underline-offset-4">
-              Terms of Service 
-            </a>
-          </div>
         </div>
       </footer>
     </div>
