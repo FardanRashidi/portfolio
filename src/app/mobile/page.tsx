@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function MobileApp() {
   return (
-    <div style={{ backgroundColor: '#E8E9EB', minHeight: '100vh' }}>
+    <div style={{ backgroundColor: '#FFFFFF', minHeight: '100vh' }}>
       {/* Top Bar */}
       <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 flex items-center justify-center">
         <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">

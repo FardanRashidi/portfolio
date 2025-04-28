@@ -60,7 +60,7 @@ export default function HomeServer() {
             will show what I use for what situation.
           </p>
           <p>
-            Let's just start with my setup. I am currently rocking a PC build
+            Let&apos;s just start with my setup. I am currently rocking a PC build
             with a Ryzen 5 2600 CPU, GTX1060 6GB, 32GB of RAM DDR4, 1TB SSD,
             and 4TB HDD (mobo is some Aorus mini ITX).
           </p>
@@ -94,9 +94,9 @@ export default function HomeServer() {
                   Debian, Fedora, etc.) and I have always found that I enjoy
                   using Arch mainly for its customizability and being able to do
                   whatever I want, including breaking it on my own. That said,
-                  why Arch as my main server? Tbh I don't have any reason other
+                  why Arch as my main server? Tbh I don&apos;t have any reason other
                   than I have been using it for a while and I know how to use
-                  it. (Debian would probably be a better choice but I don't
+                  it. (Debian would probably be a better choice but I don&apos;t
                   like it as much)
                 </p>
                 <h3
